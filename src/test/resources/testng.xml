@@ -1,0 +1,31 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+<test name="ChromeTests">
+    <parameter name="browser" value="chrome" />
+    <classes>
+        <class name="Task_10.Task10">
+            <methods>
+                <include name="Test_1" />
+                <include name="Test_2" />
+                <include name="Test_3" />
+                <include name="Test_4" />
+                <include name="Test_6" />
+                <include name="Test_7" />
+                <include name="Test_8" />
+                <include name="Test_9" />
+                <!-- Add other test methods here -->
+            </methods>
+        </class>
+    </classes>
+</test>
+<test name="FirefoxTests">
+    <parameter name="browser" value="firefox" />
+    <classes>
+        <class name="Task_10.Task10">
+            <methods>
+                <include name="Test_5" />
+            </methods>
+        </class>
+    </classes>
+</test>
+</suite>
